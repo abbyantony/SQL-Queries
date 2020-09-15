@@ -1,0 +1,32 @@
+-- EXERCISE 1: Creating a Database - Part I
+
+CREATE DATABASE IF NOT EXISTS Sales;
+
+CREATE SCHEMA IF NOT EXISTS Sales;
+
+-- EXERCISE 1: Creating a Database - Part II
+
+USE Sales;
+
+-- EXERCISE 1: Creating a Table
+
+CREATE TABLE customers				
+(
+    customer_id INT,
+    first_name varchar(255),
+    last_name varchar(255),
+    email_address varchar(255),
+    number_of_complaints int
+);
+
+-- EXERCISE 1: Using Databases and Tables
+
+SELECT 
+    *
+FROM
+    sales;
+
+SELECT 
+    *
+FROM
+    sales.sales;
